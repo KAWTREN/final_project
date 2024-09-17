@@ -24,7 +24,7 @@ This is the back-end API for an e-commerce website, providing endpoints for mana
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/azdinserhani/E-commerce-website-Api.git
+    git clone https://github.com/KAWTREN/final_project/tree/main.git
     ```
 
 2. **Install dependencies:**
@@ -76,5 +76,3 @@ This is the back-end API for an e-commerce website, providing endpoints for mana
 ## Future Enhancements
 
 - Integration with payment gateways.
-- Enhanced security features (2FA, etc.).
-- Admin panel for product and order management.
