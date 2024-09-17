@@ -23,6 +23,16 @@ if (process.env.NODE_ENV== 'development') {
 // Routes
 app.use('/api/v1/categories',category_route);
 
+app.all('*', (req, res, next) => {
+    const err = new Error(`can't find this route: ${req.originalUrl}`);
+    next(err.message);
+});
+
+// error handling middleware
+app.use((err, req, res, next) => {
+    res.status(400).json({ err });
+});
+
 
 const PORT =process.env.PORT || 8000;
 app.listen(PORT, () => {
